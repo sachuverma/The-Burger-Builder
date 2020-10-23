@@ -114,6 +114,13 @@ class BurgerBuilder extends Component {
       .then(res => {
         console.log(res);
         this.setState({loading: true, purchasing: false});
+        alert('Order Completed :)');
+        this.setState({ ingredients:{
+          salad: 0,
+          cheese: 0,
+          meat: 0,
+          bacon: 0,
+        }});    
       })
       .catch(err => {
         console.log(err);
