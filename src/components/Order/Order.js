@@ -16,9 +16,9 @@ const order = (props) => {
       style={{
         textTransform: 'capitalize',
         display: 'inline-block',
-        margin: '0px 8px',
+        margin: '5px 8px',
         border: '2px solid #bbb',
-        padding: '5px'
+        padding: '5px',
       }}
       key={ig.name}>
         {ig.name} ({ig.amount}) 
@@ -27,7 +27,7 @@ const order = (props) => {
 
   return (
     <div className={classes.Order}>
-      <p>Ingredients: {ingredientList} </p>
+      <p>Ingredients: <br /> {ingredientList} </p>
       <p>Price: <strong>$ {Number.parseFloat(props.price.toFixed(2))}</strong></p>
     </div>
   );
