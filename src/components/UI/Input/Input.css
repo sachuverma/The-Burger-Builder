@@ -12,7 +12,7 @@
 
 .InputElement{
   outline: none;
-  border: 1px solid rgb(97, 97, 97);
+  border: 2px solid rgb(97, 97, 97);
   background-color: #ddd;
   font: inherit;
   padding: 6px 10px;
@@ -26,3 +26,17 @@
   background-color: rgb(197, 165, 124)26));
 }
 
+.Invalid{
+  border: 2px solid rgb(138, 20, 20);
+  background-color: rgba(255, 0, 0, 0.144);
+}
+
+.Valid{
+  border: 2px solid rgb(42, 109, 34);
+  background-color: rgba(13, 107, 34, 0.144);
+}
+
+.ValidationError {
+  color: rgb(116, 47, 47);
+  margin: 2px 0;
+} 
